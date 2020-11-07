@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    string h;
+    cin>>h;
+    h[0] = toupper(h[0]);
+    cout<<h<<endl;
+    return 0;
+}
