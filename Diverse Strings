@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;cin>>n;
+    string h;
+    while(n--){
+        cin>>h;
+        sort(h.begin() , h.end());
+        char c =h[0];
+        bool gu=true;
+        for(int i=1;i<h.length();i++){
+            c++;
+            if(c!=h[i]){gu=false;break;}
+        }
+        if(gu){cout<<"Yes"<<endl;}
+        else{cout<<"No"<<endl;}
+    }
+    return 0;
+}
