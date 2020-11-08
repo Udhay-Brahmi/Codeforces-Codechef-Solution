@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,d;
+    cin>>n;
+    bool gu=true;
+    while(n--){
+      cin>>d;
+      if(d==1){gu=false;break;}
+    }
+    if(gu){cout<<"EASY"<<endl;}
+    else{cout<<"HARD"<<endl;}
+    return 0;
+}
