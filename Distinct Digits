@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    long long int a,b;
+    cin>>a>>b;
+    string h;
+    for(int i=a;i<=b;i++){
+        h=to_string(i);
+        map<char,int> m;
+        for(int j=0;j<h.length();j++){ m[h[j]]++;}
+        if(m.size()==h.length()){cout<<h<<endl;return 0;}
+    }
+    cout<<-1<<endl;
+    return 0;
+}
