@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    string h;
+    int n;
+    cin>>n;
+    cin.ignore();
+    getline(cin,h);
+    vector<int> vec;int c=0;
+    for(int i=0;i<h.length();i++){
+        if(h[i]==' '){vec.push_back(c);c=0;}
+        else if(isupper(h[i])){c++;}
+    }
+    vec.push_back(c);
+    sort(vec.begin(),vec.end());
+    cout<<vec[vec.size()-1]<<endl;
+    return 0;
+}
