@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    string h;cin>>h;
+    int k=0;
+    for(int i=0;i<h.length();i++){
+         if(h[i]=='a'){k++;}
+    }
+    int y = k - 1;
+    int u = h.length() -k;
+    if( (u-y)<0 ){cout<<(k+u)<<endl;}
+    else{cout<<(y+k)<<endl;}
+    return 0;
+}
