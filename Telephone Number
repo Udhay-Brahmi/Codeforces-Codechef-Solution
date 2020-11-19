@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;cin>>n;
+    while(n--){
+        int a;string h;
+        cin>>a>>h;bool gu=false;
+        for(int i=0;i<a;i++){
+            if(h[i]=='8'){
+               if( (a-i)>=11 ){gu=true;break;}
+            }
+        }
+        if(gu){cout<<"YES"<<endl;}
+        else{cout<<"NO"<<endl;}
+    }
+    return 0;
+}
