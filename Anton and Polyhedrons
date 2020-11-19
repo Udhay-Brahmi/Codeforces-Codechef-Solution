@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;cin>>n;
+    string h;int sum=0;
+    while(n--){
+       cin>>h;
+       if(h=="Tetrahedron"){sum+=4;}
+       else if(h=="Cube"){sum+=6;}
+       else if(h=="Octahedron"){sum+=8;}
+       else if(h=="Dodecahedron"){sum+=12;}
+       else if(h=="Icosahedron"){sum+=20;}
+    }
+    cout<<sum<<endl;
+    return 0;
+}
