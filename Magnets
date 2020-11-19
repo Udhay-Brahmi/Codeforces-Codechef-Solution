@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;cin>>n;
+    string j="@",h;
+    int c=0;
+    while(n--){
+        cin>>h;
+        if(h!=j){c++;}
+        j=h;
+    }
+    cout<<c<<endl;
+    return 0;
+}
