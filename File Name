@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    string h;
+    cin>>n;
+    cin>>h;
+    int c=0;
+    for(int i=0;i<(n-2);i++){
+        if(h[i]=='x'&&h[i+1]=='x'&&h[i+2]=='x'){c++;}
+    }
+    cout<<c<<endl;
+    return 0;
+}
