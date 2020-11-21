@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,rank=0,desire=0,sum=0;cin>>n;
+    int arr[n-1];
+    for(int i=0;i<(n-1);i++){cin>>arr[i];}
+    cin>>rank>>desire;
+    int j=0;
+    while(rank!=desire){
+        rank++;
+        sum+=arr[j];
+        j++;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
