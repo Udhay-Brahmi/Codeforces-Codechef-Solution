@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    string h;
+    while(n--){
+        cin>>h;
+        if(h.length()>10){cout<<h[0]<<(h.length()-2)<<h[h.length()-1]<<endl;}
+        else{cout<<h<<endl;}
+    }
+    return 0;
+}
