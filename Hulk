@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+  int n;
+  cin>>n;
+  bool gu=false;int flag=0;string j="";
+  if(n>1){gu=true;}
+  for(int i=0;i<n;i++){
+      if(flag==0){j+="I hate ";flag=1;}
+      else{j+="I love ";flag=0;}
+      if(gu && i != (n-1)){j+="that ";}
+  }
+  j+="it";
+  cout<<j<<endl;
+}
