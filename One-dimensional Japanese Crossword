@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+  int n,c=0;string h;
+  cin>>n>>h;
+  vector<int> vec;
+  for(int i=0;i<n;i++){
+      if(h[i]=='B'){c++;}
+      else if(c!=0){vec.push_back(c);c=0;}
+  }
+  if(h[n-1]=='B'){vec.push_back(c);}
+  cout<<vec.size()<<endl;
+  for(auto e : vec) cout<<e<<" ";
+  cout<<endl;
+  return 0;
+}
