@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+  int n;cin>>n;
+  while(n--){
+      string h;
+      cin>>h;
+      int a = h.length();
+      if(h[a-1]=='o' && h[a-2]=='p'){cout<<"FILIPINO"<<endl;}
+      if( (h[a-1]=='u' && h[a-2]=='s' && h[a-3]=='e' &&h[a-4]=='d')||(h[a-1]=='u' && h[a-2]=='s' && h[a-3]=='a' && h[a-4]=='m') ){cout<<"JAPANESE"<<endl;}
+      if(h[a-1]=='a'&&h[a-2]=='d'&&h[a-3]=='i'&&h[a-4]=='n'&&h[a-5]=='m'){cout<<"KOREAN"<<endl;}
+  }
+  return 0;
+}
+//desu" or "   mnida
