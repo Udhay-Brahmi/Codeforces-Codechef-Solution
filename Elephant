@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;cin>>n;
+    if(n<=5){cout<<1<<endl;return 0;}
+    else{
+        int y = (n - (n%5))/5,l;
+        if(n%5==0){l=0;}
+        else{l=1;}
+        cout<<y+l<<endl;
+        return 0;
+    }
+}
