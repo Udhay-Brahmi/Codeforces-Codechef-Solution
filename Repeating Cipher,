@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){;
+    int n,m=0;cin>>n;
+    string h,j="";cin>>h;
+    for(int i=0;i<n;i++){
+        j+=h[i];
+        i = i + m;
+        m++;
+    }
+    cout<<j<<endl;
+}
