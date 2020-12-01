@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){;
+    int n,m;cin>>n>>m;
+    string h;int k=0,max=0;
+    while(m--){
+        cin>>h;
+        size_t found = h.find('0');
+        if(found!=string::npos){
+            k++;
+        }
+        else{
+            if(k>max){max=k;}
+            k=0;
+        }
+    }
+    if(k>max){max=k;}
+    cout<<max<<endl;
+    return 0;
+}
