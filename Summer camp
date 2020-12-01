@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){;
+    int n;cin>>n;
+    string h="";
+    for(int i=1;i<=n;i++){
+        h+=to_string(i);
+    }
+    cout<<h[n-1]<<endl;
+    return 0;
+}
