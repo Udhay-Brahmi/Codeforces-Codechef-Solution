@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){;
+    string h;cin>>h;int o=0,t=0,th=0;
+    for(int i=0;i<h.length();i++){
+        if(h[i]=='1'){o++;}
+        else if(h[i]=='2'){t++;}
+        else if(h[i]=='3'){th++;}
+    }
+    string j="";
+    while(o--){j+="1+";}
+    while(t--){j+="2+";}
+    while(th--){j+="3+";}
+    cout<<j.substr(0,j.length()-1)<<endl;
+    return 0;
+}
