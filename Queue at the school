@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+string fun(string h,int n){
+    if(n==0){return h;}
+    for(int i=0;i<=h.length();i++){
+        if(h[i]=='B' && h[i+1]=='G'){swap(h[i],h[i+1]);i++;}
+    }
+    return fun(h,--n);
+}
+int main(){
+    int n,m;cin>>n>>m;
+    string h;cin>>h;
+    cout<<fun(h,m)<<endl;;
+    return 0;
+}
