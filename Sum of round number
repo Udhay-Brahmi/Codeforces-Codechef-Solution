@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;string h;
+    cin>>n;
+    while(n--){
+       cin>>h;
+       int y =h.length();
+       vector<string> vec;
+       for(int i=0;i<h.length();i++){
+           if(h[i]!='0'){
+               vec.push_back(h[i]+string(y-1,'0'));
+           }
+           y--;
+       }
+       cout<<vec.size()<<endl;
+       for(auto e:vec)cout<<e<<" ";
+       cout<<endl;
+    }
+    return 0;
+}
