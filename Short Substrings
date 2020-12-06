@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;string h;
+    cin>>n;
+    while(n--){
+       cin>>h;
+       string j="";j+=h[0];int k=0;
+       for(int i=1;i<h.length();i+=2){
+           j+=h[i];
+       }
+       cout<<j<<endl;
+    }
+    return 0;
+}
