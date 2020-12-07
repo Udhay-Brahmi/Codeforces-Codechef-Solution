@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,d,sum=0,k=0;cin>>a;
+    while(a--){
+        cin>>d;
+        if(d==-1 && sum==0){k++;}
+        else{sum+=d;}
+    }
+    cout<<k<<endl;
+    return 0;
+}
