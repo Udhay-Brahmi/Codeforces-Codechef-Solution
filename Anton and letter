@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    string h;
+    getline(cin,h);
+    map<char,int> m;
+    for(int i =0;i<h.length();i++){
+        if(isalpha(h[i])){m[h[i]]++;}
+    }
+    cout<<m.size()<<endl;
+    return 0;
+}
